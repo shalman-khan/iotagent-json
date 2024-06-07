@@ -20,20 +20,21 @@
  * For those usages not covered by the GNU Affero General Public License
  * please contact with::[contacto@tid.es]
  */
-var config = {};
+const config = {};
 
 config.mqtt = {
     host: 'localhost',
     port: 1883,
     options: {
         keepalive: 0,
-        connectTimeout: 60 * 60 * 1000
+        connectTimeout: 60 * 60 * 1000,
+        clientId: 'myDeviceId',
     }
 };
 
 config.device = {
-    id: 'myDeviceId',
-    apikey: '1234'
+    id: 'robot001',
+    apikey: 'robot_api_key'
 };
 
 module.exports = config;

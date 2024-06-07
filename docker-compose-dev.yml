@@ -5,11 +5,13 @@ services:
     image: mongo:6.0.12
     ports:
       - "27017:27017"
+      - "31002:31002"
 
   mosquitto:
     image: eclipse-mosquitto:1.6.15
     ports:
       - "1883:1883"
+      - "9001:9001"
 
   rabbit:
     image: rabbitmq:3.11.13
