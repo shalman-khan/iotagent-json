@@ -122,6 +122,19 @@ To run requirements you can type:
 
 ---
 
+## Tracker Testing Instructions 
+
+Open Terminal 1 {to run IOT agent}
+```
+cd iotagent-json
+bin/iotagent-json
+```
+Open Terminal 2 {for provision of service group, device addition and mqtt publisher for state update}
+```
+python3 scripts/provision_module.py
+python3 scripts/mqtt_publisher.py
+```
+
 ## License
 
 The IoT Agent for JSON is licensed under [Affero General Public License (GPL) version 3](./LICENSE).
